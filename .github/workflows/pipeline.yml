@@ -32,3 +32,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: blooming-journey-44012
           heroku_email: bhavikagrawal@gmail.com
+          healthcheck: "https://blooming-journey-44012.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
